@@ -1,11 +1,12 @@
+#other tests
 
-
-default: run
-
-
-run:
+OR:
+	@echo "-- building and Testing OR gate "
 	@echo
-	@echo "-- Building and Testing And Gate."
+
+AND:
+	@echo
+	@echo "-- Building and Testing AND Gate."
 	verilator -Wall -cc --exe --trace --build and_gate.cpp and_gate.v
 	@echo "-- build complete."
 	./obj_dir/Vand_gate
